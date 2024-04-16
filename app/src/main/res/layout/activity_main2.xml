@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Activity2">
+
+    <ImageView
+        android:id="@+id/ivCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/tvEleccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Elegir ciudad"
+        app:layout_constraintEnd_toEndOf="@+id/ivCiudad"
+        app:layout_constraintStart_toStartOf="@+id/ivCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/ivCiudad" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="326dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvEleccion"
+        app:layout_constraintStart_toStartOf="@+id/tvEleccion"
+        app:layout_constraintTop_toBottomOf="@+id/tvEleccion" />
+
+    <Button
+        android:id="@+id/pboton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Prevision"
+        app:layout_constraintEnd_toEndOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+</androidx.constraintlayout.widget.ConstraintLayout>
