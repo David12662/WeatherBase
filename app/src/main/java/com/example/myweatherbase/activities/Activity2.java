@@ -40,5 +40,7 @@ public class Activity2 extends BaseActivity {
         boton.setOnClickListener(view -> {
             Intent intent=new Intent(this, MainActivity.class);
         });
+        Ciudad c=(Ciudad) spinner.getSelectedItem();
+        iv.setImageResource(c.getFoto());
     }
 }
